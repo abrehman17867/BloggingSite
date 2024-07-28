@@ -1,0 +1,35 @@
+.containerSC {
+    z-index: 2;
+    list-style: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 7px;
+    background-color: red;
+    font-size: 25px;
+    text-align: center;
+    position: fixed;
+    opacity: 0.5;
+    bottom: 0px;
+    margin-bottom: 26px;
+    margin-left: 10px;
+}
+
+.containerSC:hover {
+    opacity: 1;
+}
+
+.imgset i {
+    font-size: 60px;
+}
+
+.imgset i {
+    color: wheat;
+    margin: -8px -9px;
+    font-size: 60px;
+}
+
+.imgset i:active {
+    transform: scale(0.7);
+    color: red;
+
+}

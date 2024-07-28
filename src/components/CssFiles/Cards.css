@@ -1,0 +1,126 @@
+.card {
+    z-index: 1;
+    display: inline-block;
+    height: 180px;
+    width: 400px;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 20px;
+    opacity: 0.89;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.card h3 {
+    color: white;
+    font-size: 23px;
+    width: 350px;
+
+    margin: 10px 44px;
+}
+
+.card h3:hover {
+    color: red;
+}
+
+.card p {
+    color: white;
+    height: 70px;
+    width: 100%;
+    overflow: hidden
+}
+
+.card a {
+    background-color: orangered;
+    height: 34px;
+    width: 188px;
+    border-radius: 40px;
+    text-decoration: none;
+    padding: 7px;
+    color: black;
+    margin: 8px 26px;
+}
+
+.card .front-face,
+.card .back-face {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 3px;
+    background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+    transition: .7s cubic-bezier(.4, .2, .2, 1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+}
+
+.card:hover>.back-face {
+    transform: rotateY(0);
+}
+
+.card:hover>.front-face {
+    transform: rotateY(-180deg);
+}
+
+.card .back-face {
+    transform: rotateY(180deg);
+}
+
+.card-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img {
+    height: 140px;
+    padding: 0px 0px;
+    margin-right: 10px;
+}
+
+.card-img img {
+    height: inherit;
+    padding: 0px 14px;
+}
+
+.card-img img:hover {
+    transform: scale(1.1);
+}
+
+.card-content {
+    padding: 0px 10px;
+}
+
+.card-content p {
+    font-size: 20px;
+}
+
+@media screen and (min-width: 830px) and (max-width: 1230px) {
+    .card h3 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 830px) {
+    .card h3 {
+        font-size: 20px;
+        margin-top: 19px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .card h3 {
+        font-size: 20px;
+        margin-top: 19px;
+    }
+}

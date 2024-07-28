@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+
+    opacity: 0.1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+#introSection {
+    font-size: 2rem;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("/public/art2.jpg") center /cover no-repeat;
+    height: 300px;
+    background-color: red;
+    text-align: center;
+}
+
+/*  */
+#introSection h1 {
+    font-size: 2rem;
+    color: wheat;
+    height: 50px;
+    width: 700px;
+    background-color: black;
+    overflow: hidden;
+    border-radius: 30px;
+    padding: 2px;
+}
+
+#introSection h1::after {
+    content: "";
+    position: absolute;
+    height: 48px;
+    border-left: 3px solid wheat;
+    background: black;
+    animation: delete 7s steps(30) 5s infinite;
+}
+
+@keyframes delete {
+    from {
+        left: 32vw;
+        width: 32%;
+    }
+
+    to {
+        left: 65vw;
+        width: 0%;
+    }
+
+
+}
+
+/*  */
+#introSection div.small {
+    font-size: 20px;
+    color: black;
+}
+
+#missionSection {
+    height: 1200px;
+
+}
+
+#missionSection h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* padding: 23px ; */
+    color: red;
+    cursor: pointer;
+}
+
+.flexcard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 1000px;
+    overflow: scroll;
+    justify-content: center;
+}
+
+
+#sponsorsSection {
+
+    height: 298px;
+}
+
+#sponsorsSection::before {
+    content: "";
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url(/public/art3.jpg)center no-repeat;
+    background-size: cover;
+}
+
+#sponsorsSection h2 {
+    text-align: center;
+    color: red;
+    font-size: 45px;
+}
+
+#sponsers {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 19px;
+    margin-left: 10px;
+    justify-content: space-between;
+}
+
+.spImage {
+    position: relative;
+    height: 85%;
+}
+
+@media screen and (min-width: 830px) and (max-width: 1230px) {
+
+    #introSection h1 {
+        width: 70%;
+        border-radius: 30px;
+        font-size: 2rem;
+    }
+
+    #introSection h1::after {
+        content: "";
+        position: absolute;
+        height: 40px;
+        border-left: 3px solid wheat;
+        background: black;
+        animation: delete 7s steps(30) 5s infinite;
+    }
+
+    @keyframes delete {
+        from {
+            left: 32vw;
+            width: 38%;
+        }
+
+        to {
+            left: 72vw;
+            width: 0%;
+        }
+
+    }
+
+    #missionSection h2 {
+        font-size: 55px;
+    }
+
+    #sponsers {
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 19px;
+        margin-left: 10px;
+        justify-content: space-between;
+    }
+
+    .spImage {
+        position: relative;
+        height: 55%;
+    }
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 830px) {
+
+    #introSection h1 {
+        width: 100%;
+        border-radius: 0px;
+        font-size: 1.9rem;
+    }
+
+    #introSection h1::after {
+        content: "";
+        position: absolute;
+        height: 40px;
+        border-left: 3px solid wheat;
+        background: black;
+        animation: delete 7s steps(30) 5s infinite;
+    }
+
+    @keyframes delete {
+        from {
+            left: 10vw;
+            width: 85%;
+        }
+
+        to {
+            left: 89vw;
+            width: 0%;
+        }
+
+    }
+
+    #missionSection h2 {
+        font-size: 45px;
+    }
+
+    #sponsers {
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 19px;
+        margin-left: 10px;
+        justify-content: space-between;
+    }
+
+    .spImage {
+        position: relative;
+        height: 24%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #introSection h1 {
+        width: 100%;
+        border-radius: 0px;
+        font-size: 1.4rem;
+        height: 35px;
+    }
+
+    #introSection h1::after {
+        content: "";
+        position: absolute;
+        height: 30px;
+        border-left: 3px solid wheat;
+        background: black;
+        animation: delete 7s steps(30) 5s infinite;
+    }
+
+    @keyframes delete {
+        from {
+            left: 7vw;
+            width: 87%;
+        }
+
+        to {
+            left: 94vw;
+            width: 0%;
+        }
+    }
+
+    #missionSection h2 {
+        font-size: 35px;
+    }
+
+    #sponsers {
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 19px;
+        margin-left: 10px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .spImage {
+        position: relative;
+        height: 24%;
+    }
+}

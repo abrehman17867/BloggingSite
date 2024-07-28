@@ -1,0 +1,103 @@
+.containersign1-sign2 {
+    height: 550px;
+    display: flex;
+}
+
+.containersign2-sign2 {
+    width: 80%;
+    margin: auto;
+    height: 202px;
+    /* background: rgb(218, 225, 228); */
+    background: wheat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.containersign2-sign2 button {
+    position: relative;
+    top: 12px;
+    background-color: black;
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.containersign2-sign2 a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.containersign2-sign2 input:nth-child(1) {
+    padding: 4px;
+    color: red;
+    font-size: 17px;
+}
+
+
+.containersign2-sign2 #verifyform-sign2 button{
+    color: red;
+    position: relative;
+    inset: 0px 7px -8px -2px;
+    width: fit-content;
+}
+
+/*  */
+.containersign2-sign2 .eyepos-sign2 {
+    position: relative;
+    display: flex;
+    top: 2px;
+}
+
+
+@media screen and (max-width: 300px) {
+
+    .containersign2-sign2 #verifyform-sign2 {
+        display: flex;
+        scale: 0.8;
+    }
+
+    .containersign2-sign2 {
+        width: 91%;
+    }
+
+    .containersign2-sign2 button {
+        width: 180px;
+        padding: 5px 4px;
+        position: relative;
+        left: 40px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    #verifyform-sign2 {
+        display: flex;
+        scale: 0.8;
+    }
+
+    .containersign2-sign2 {
+        width: 91%;
+    }
+
+    .containersign2-sign2 button {
+        width: 180px;
+        padding: 5px 4px;
+        position: relative;
+        left: 40px;
+    }
+
+    .eyepos-sign2 {
+        position: absolute;
+        display: flex;
+        top: 39px;
+        width: 372px;
+    }
+}

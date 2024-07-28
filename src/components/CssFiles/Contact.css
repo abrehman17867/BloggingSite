@@ -1,0 +1,43 @@
+
+.container{
+    min-height: 80vh;
+    position: relative;
+    top: 70px;
+}
+h1{
+    text-align: center;
+    margin: 5px;
+    font-size: 25px;
+}
+
+.myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.myInput{
+    width: 70%;
+    padding: 4px 4px;
+    margin: 8px;
+    border-radius: 10px;
+    outline: none;
+}
+.btn{
+    padding: 4px 4px;
+    margin: 3px 3px;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.container img{
+    position: absolute;
+    opacity: 0.2;
+    margin: 101px -257px;
+}
+@media screen and (max-width: 300px){
+    .container img{
+        height: 90px;
+        margin: 101px -187px;
+    }
+}

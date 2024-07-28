@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+
+
+#errors {
+
+
+    margin: 25px 65px;
+    height: 77vh;
+
+}
+
+#errors h1 {
+    margin: 20px 0px;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+#errors h1 p {
+    margin: 20px 0px;
+
+}
+
+#errors h2 {
+    font-size: 30px;
+    margin: 10px 0px;
+    font-weight: bolder;
+
+}
+
+#errors li {
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+@media screen and (max-width:360px) {
+
+    #errors h1 {
+        font-size: 25px;
+        margin: 14px -40px;
+    }
+
+    #errors h2 {
+        font-size: 20px;
+        margin: 14px -40px;
+
+    }
+}
+
+@media screen and (min-width:360px) and (max-width:830px) {
+
+    #errors h1 {
+        font-size: 25px;
+        margin: 14px -40px;
+    }
+
+    #errors h2 {
+        font-size: 20px;
+        margin: 14px -40px;
+
+    }
+}

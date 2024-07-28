@@ -1,0 +1,157 @@
+.containersign1 {
+    height: 550px;
+    display: flex;
+}
+
+.containersign2 {
+    width: 80%;
+    margin: auto;
+    height: 250px;
+    /* background: rgb(218, 225, 228); */
+    background: wheat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+}
+
+
+.containersign2 form button {
+    background-color: black;
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.containersign2 form a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.containersign2 form input:nth-child(1) {
+    padding: 4px;
+    font-size: 17px;
+    margin: 8px;
+    width: -webkit-fill-available;
+}
+
+.containersign2 form input:nth-child(2) {
+    font-size: 17px;
+    color: red;
+    padding: 4px;
+    margin: 8px;
+    width: -webkit-fill-available;
+}
+
+.containersign2 form input:nth-child(3) {
+    margin: 87px 8px;
+    position: absolute;
+}
+
+.containersign2 form button {
+    color: red;
+    font-size: 15px;
+    font-weight: bolder;
+    margin: -52px 101px;
+    width: 39%;
+}
+
+.containersign2 span {
+    margin: -5px 27px;
+    width: fit-content;
+    position: absolute;
+}
+
+.containersign2 h1 {
+    margin: 11px;
+}
+
+.input-feild {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+}
+
+.eyepos {
+    position: relative;
+    display: flex;
+    top: -31px;
+    width: 169px;
+    left: 50%;
+}
+
+.containersign2 form input[type="checkbox"] {
+
+    position: relative;
+    top: -28px;
+    left: 13px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px)  {
+
+
+
+
+    .containersign2 {
+        width: 100%;
+        height: 350px;
+        scale: 0.8;
+    }
+
+    .containersign2 span {
+        width: 255px;
+        position: relative;
+        margin: 0;
+        top: -5px;
+        left: 15px;
+    }
+
+    .containersign2 form input:nth-child(3) {
+        margin: 90px -12px;
+    }
+
+    .containersign2 form input[type="checkbox"] {
+        position: relative;
+        top: -3px;
+        left: 17px;
+    }
+}
+@media screen and (max-width: 320px)  {
+
+
+    .containersign2 {
+        width: 100%;
+        height: 350px;
+        scale: 0.75;
+    }
+
+    .containersign2 span {
+        width: 255px;
+        position: relative;
+        margin: 0;
+        top: -5px;
+        left: 15px;
+        font-size: 13px;
+    }
+
+    .containersign2 form input:nth-child(3) {
+        margin: 90px -12px;
+    }
+
+    .containersign2 form input[type="checkbox"] {
+        position: relative;
+        top: -3px;
+        left: 17px;
+    }
+}
